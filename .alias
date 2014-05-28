@@ -1,0 +1,24 @@
+# Lazy Stuff
+alias be="bundle exec"
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias g='git'
+
+# Powder
+alias log='powder applog'
+alias pop='powder open'
+alias pox='powder open --xip'
+
+# Ey Toolbox
+source /Users/yon/Development/EyToolbox/.tools
+
+# Helpful stuff
+alias dnsflush="dscacheutil -flushcache"
+alias svg-convert='qlmanage -t -s 1000 -o .'
+alias pebble_build='./waf configure;./waf build'
+alias lazy="history | awk '{a[$2]++}END{for(i in a){print a[i] \" \" i}}' | sort -rn | head ' \" \"}}'"
+
+# Project Switching
+alias native='cd ~/Development/teacup/native'
+alias server='cd ~/Development/teacup/server'

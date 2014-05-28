@@ -1,0 +1,2 @@
+export POW_DST_PORT=19999
+export POW_WORKERS=1

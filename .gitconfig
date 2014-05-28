@@ -1,0 +1,58 @@
+[user]
+	name = yon
+	email = Lighthawky@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+
+[core]
+	editor = vim
+	autocrlf = off
+	excludesfile = /Users/yon/.gitignore_global
+
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	ss = status --short
+	br = branch
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	ls = ls-files
+	d = diff -C --stat -p
+	dw = diff -C --stat -p --color-words
+	g = grep --color
+	ce = commit -am
+	amend = commit --amend
+	pom = pull
+	img = add public/images
+	db  = add db/migrate/
+	model  = add app/models/
+	pl = pull
+	pr = pull --rebase
+	ps = push
+	r  = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit  --date=relative -40
+	ra = !git r --all
+	aa = add -A
+	remotebranch = branch -a
+	remotebranches = branch -a
+	remotediff = !sh -c 'git diff --stat master $1/master' -
+
+[push]
+	default = current
+[pull]
+	default = current
+[help]
+	autocorrect = 1
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 1513x930+35+33
+	file-view-hpane-position = 259
+	file-view-vpane-position = 208
+	history-view-vpane-position = 695
+	main-window-view = FileView
+[github]
+	user = yonbergman
+[credential]
+	helper = osxkeychain
