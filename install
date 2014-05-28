@@ -1,4 +1,5 @@
+base=$(pwd)
 for file in .*
 do
- [ -f "$file" ] && set -x && ln -sfn "$file" "tmp/$file" && set +x
+ [ -f "$file" ] && set -x && ln -sfn "$base/$file" ~ && set +x
 done
