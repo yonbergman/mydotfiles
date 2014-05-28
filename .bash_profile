@@ -50,3 +50,4 @@ PS1="\[\e[1;34m\]\w\[\e[0;35m\]\$(parse_git_branch)\[\e[0;0m\]$ "
 # export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME\/Development/~DEV}\007"'
 # export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 # export PATH=~/Development/sdk/pebble-dev/arm-cs-tools/bin:$PATH
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
