@@ -34,6 +34,7 @@ source ~/.alias
 source ~/Scripts/git-completion.bash
 
 export CLICOLOR=yes
+export GIT_MERGE_AUTOEDIT=no
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'

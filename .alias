@@ -18,6 +18,8 @@ alias dnsflush="dscacheutil -flushcache"
 alias svg-convert='qlmanage -t -s 1000 -o .'
 alias pebble_build='./waf configure;./waf build'
 alias lazy="history | awk '{a[$2]++}END{for(i in a){print a[i] \" \" i}}' | sort -rn | head ' \" \"}}'"
+alias redis="redis-cli -p $BOXEN_REDIS_PORT"
+alias heroku-link='heroku git:remote -a '
 
 # Project Switching
 alias native='cd ~/Development/teacup/native'

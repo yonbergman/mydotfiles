@@ -1,6 +1,7 @@
 [user]
 	name = yon
 	email = Lighthawky@gmail.com
+
 [color]
 	diff = auto
 	status = auto
@@ -10,7 +11,8 @@
 [core]
 	editor = vim
 	autocrlf = off
-	excludesfile = /Users/yon/.gitignore_global
+	excludesfile = /opt/boxen/config/git/gitignore
+  mergeoptions = --no-edit
 
 [alias]
 	ci = commit
@@ -41,10 +43,13 @@
 
 [push]
 	default = current
+
 [pull]
 	default = current
+
 [help]
 	autocorrect = 1
+
 [giggle]
 	main-window-maximized = false
 	main-window-geometry = 1513x930+35+33
@@ -52,7 +57,12 @@
 	file-view-vpane-position = 208
 	history-view-vpane-position = 695
 	main-window-view = FileView
+
 [github]
 	user = yonbergman
+
 [credential]
-	helper = osxkeychain
+	helper = /opt/boxen/bin/boxen-git-credential
+
+[hub]
+	protocol = https
